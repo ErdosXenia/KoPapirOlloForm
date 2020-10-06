@@ -90,6 +90,7 @@
             this.pbJatekos.Location = new System.Drawing.Point(40, 61);
             this.pbJatekos.Name = "pbJatekos";
             this.pbJatekos.Size = new System.Drawing.Size(200, 227);
+            this.pbJatekos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbJatekos.TabIndex = 4;
             this.pbJatekos.TabStop = false;
             // 
@@ -98,6 +99,7 @@
             this.pbSzamitogep.Location = new System.Drawing.Point(324, 57);
             this.pbSzamitogep.Name = "pbSzamitogep";
             this.pbSzamitogep.Size = new System.Drawing.Size(200, 231);
+            this.pbSzamitogep.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSzamitogep.TabIndex = 5;
             this.pbSzamitogep.TabStop = false;
             // 
@@ -118,6 +120,7 @@
             this.btnKo.TabIndex = 7;
             this.btnKo.Text = "Kő";
             this.btnKo.UseVisualStyleBackColor = true;
+            this.btnKo.Click += new System.EventHandler(this.btnKo_Click);
             // 
             // btnPapir
             // 
@@ -127,6 +130,7 @@
             this.btnPapir.TabIndex = 8;
             this.btnPapir.Text = "Papír";
             this.btnPapir.UseVisualStyleBackColor = true;
+            this.btnPapir.Click += new System.EventHandler(this.btnPapir_Click);
             // 
             // btnOllo
             // 
@@ -136,6 +140,7 @@
             this.btnOllo.TabIndex = 9;
             this.btnOllo.Text = "Olló";
             this.btnOllo.UseVisualStyleBackColor = true;
+            this.btnOllo.Click += new System.EventHandler(this.btnOllo_Click);
             // 
             // btnKilepes
             // 
@@ -145,6 +150,7 @@
             this.btnKilepes.TabIndex = 10;
             this.btnKilepes.Text = "Kilépés";
             this.btnKilepes.UseVisualStyleBackColor = true;
+            this.btnKilepes.Click += new System.EventHandler(this.btnKilepes_Click);
             // 
             // btnSzabaly
             // 
@@ -163,6 +169,7 @@
             this.btnUj.TabIndex = 12;
             this.btnUj.Text = "Új játék";
             this.btnUj.UseVisualStyleBackColor = true;
+            this.btnUj.Click += new System.EventHandler(this.btnUj_Click);
             // 
             // panel1
             // 
@@ -185,15 +192,16 @@
             this.panel2.Controls.Add(this.btnOllo);
             this.panel2.Controls.Add(this.btnPapir);
             this.panel2.Controls.Add(this.btnKo);
-            this.panel2.Location = new System.Drawing.Point(16, 351);
+            this.panel2.Location = new System.Drawing.Point(13, 351);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(558, 44);
+            this.panel2.Size = new System.Drawing.Size(558, 38);
             this.panel2.TabIndex = 14;
             // 
             // frmFo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnKilepes;
             this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -201,6 +209,7 @@
             this.Controls.Add(this.btnSzabaly);
             this.Controls.Add(this.btnKilepes);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmFo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
